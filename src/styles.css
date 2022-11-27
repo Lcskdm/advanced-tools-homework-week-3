@@ -6,8 +6,8 @@
 }
 
 body {
-  margin: 90px auto;
-  max-width: 800px;
+  margin: 80px auto;
+  max-width: 1000px;
 }
 
 h1,
@@ -38,7 +38,7 @@ p {
 }
 
 a:hover {
-  color: #504bbc;
+  color: var(--link-hover-color);
 }
 
 .contact-link:hover {
@@ -48,7 +48,7 @@ a:hover {
 
 .navigation-links {
   display: flex;
-  margin-top: 40px;
+  margin: 40px auto;
   justify-content: center;
 }
 
@@ -117,4 +117,26 @@ a:hover {
 .btn-primary-color:hover {
   color: rgb(231, 231, 231);
   background-color: var(--link-hover-color) !important;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .btn-primary-color {
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  .col-sm-4 {
+    padding-bottom: 20px;
+  }
 }
