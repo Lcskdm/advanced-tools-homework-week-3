@@ -1,6 +1,7 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --link-hover-color: #504bbc;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -36,6 +37,15 @@ p {
   line-height: 1.5;
 }
 
+a:hover {
+  color: #504bbc;
+}
+
+.contact-link:hover {
+  color: rgb(231, 231, 231);
+  background-color: var(--link-hover-color) !important;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -59,6 +69,10 @@ p {
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.about-link:hover {
+  border: 1px solid var(--link-hover-color);
 }
 
 .homepage-link {
@@ -86,6 +100,7 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color: #504bbc;
 }
 
 .img-fluid {
@@ -97,4 +112,9 @@ p {
   background-color: var(--primary-color) !important;
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+.btn-primary-color:hover {
+  color: rgb(231, 231, 231);
+  background-color: var(--link-hover-color) !important;
 }
